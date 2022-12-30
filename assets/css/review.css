@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0 ;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.cart-icon{
+    width:35px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+.cart-icon:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+nav .menu-hamburger{
+    display: none;
+    position: absolute;
+    top:50px;
+    right: 50px;
+    width: 35px;
+}
+
+.mobile-menu{
+    margin-left: 0;
+}
+
+/* review */
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+  
+  .contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  
+  .contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+  }
+  
+  .contact-info, .contact-form{
+    flex: 1;
+  }
+  
+  .contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .text-box:first-child{
+    margin-right: 15px;
+  }
+  
+  .contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .send-btn{
+    float: right;
+    background: #2E94E3;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  .contact-form .send-btn:hover{
+    background: #0582E3;
+  }
+
+@media screen and (max-width: 800px){
+    .navbar{
+        top:0;
+        left:0;
+        position: absolute;
+        background-color:rgba(0, 0, 255, 0.294);
+        backdrop-filter:blur(7px);
+        width:100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        z-index: 4;
+    }
+
+    .navbar.mobile-menu{
+        margin-left: 0;
+    }
+
+    .row , .about_me{
+        z-index: 1;
+    }
+
+    nav ul{
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li{
+        margin: 25px 0;
+        font-size: 0.6cm;
+    }
+
+    .text-box{
+        display: none;
+    }
+
+    .social-icons{
+        display: none;
+    }
+    .cart-icon{
+        position: absolute;
+        display: flex;
+        top:50px;
+        right: 100px;
+        width: 35px; 
+        z-index: 4;
+    }
+    nav .menu-hamburger{
+        display: block;
+        z-index: 4;
+    }
+
+    .contact-section{
+        flex-direction: column;
+      }
+    
+      .contact-info, .contact-form{
+        margin: 30px 50px;
+      }
+    
+      .contact-form h2{
+        font-size: 30px;
+      }
+    
+      .contact-form .text-box{
+        width: 100%;
+      }
+    
+}
