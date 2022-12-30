@@ -33,18 +33,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <img src="assets/images/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
 
         </nav>
-        <img src="assets/images/aboutme.png" class="about_me">
-        <div class="row">
-            <ul>
-                <a>Tokyo</a>
-                <p>Tokyo adalah ibu kota dan kota terbesar di Jepang. Terletak di pulau Honshu di bagian 
-                tenggara negara tersebut, Tokyo merupakan pusat ekonomi, politik, dan budaya Jepang. 
-                Kota ini terkenal dengan budayanya yang unik dan menarik, serta kemajuan teknologinya 
-                yang tinggi. Tokyo juga memiliki beberapa tempat wisata populer seperti Tokyo Skytree, 
-                Senso-ji Temple, dan Tokyo Disneyland. Selain itu, kota ini juga merupakan tempat yang 
-                tepat untuk menikmati makanan Jepang yang lezat, seperti sushi, ramen, dan tempura.</p>
-            </ul>
+        <div class="d-flex flex-row">
+            <img src="assets/images/aboutme.png" class="rounded-3 about_me" alt="" width="237px" height="388px">
+            
+                <ul class="row " >
+                    <a>Tokyo</a>
+                    <p>Tokyo adalah ibu kota dan kota terbesar di Jepang. Terletak di pulau Honshu di bagian 
+                    tenggara negara tersebut, Tokyo merupakan pusat ekonomi, politik, dan budaya Jepang. 
+                    Kota ini terkenal dengan budayanya yang unik dan menarik, serta kemajuan teknologinya 
+                    yang tinggi. Tokyo juga memiliki beberapa tempat wisata populer seperti Tokyo Skytree, 
+                    Senso-ji Temple, dan Tokyo Disneyland. Selain itu, kota ini juga merupakan tempat yang 
+                    tepat untuk menikmati makanan Jepang yang lezat, seperti sushi, ramen, dan tempura.</p>
+                </ul>
+            
         </div>
+        
     </div>
 </body>
     <script>
