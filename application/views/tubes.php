@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url('<?php echo base_url("assets/images/background.png");?>');
     }
     .text-box h1{
-        background: url('<?php echo base_url(assets/images/back.png);?>');  
+        background: url('<?php echo base_url('assets/images/back.png');?>');  
     }
 
     
