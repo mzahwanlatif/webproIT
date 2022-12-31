@@ -74,7 +74,7 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 
-.row{
+/* .row{
     box-sizing: border-box;
 
     position: absolute;
@@ -87,7 +87,7 @@ nav ul li a:hover::after{
     opacity: 0.5;
     border: 1px solid #FFFFFF;
     border-radius: 50px;
-}
+} */
 
 .row ul{
     position: absolute;
@@ -105,7 +105,7 @@ nav ul li a:hover::after{
     font-size: 0.6cm;
 }
 
-.about_me{
+/* .about_me{
     box-sizing: border-box;
 
     position: absolute;
@@ -117,7 +117,7 @@ nav ul li a:hover::after{
     border: 2px solid #484747;
     border-radius: 50px;
     
-}
+} */
 
 nav .menu-hamburger{
     display: none;
@@ -151,9 +151,9 @@ nav .menu-hamburger{
         margin-left: 0;
     }
 
-    .row , .about_me{
+    /* .row , .about_me{
         z-index: 1;
-    }
+    } */
 
     nav ul{
         top: 50px;
